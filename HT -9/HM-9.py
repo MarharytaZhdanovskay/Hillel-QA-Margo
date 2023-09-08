@@ -14,6 +14,7 @@ in such format
  etc
 
 """
+import os
 
 
 def find_alphabet_chars(i_file, o_file):
@@ -31,6 +32,6 @@ def find_alphabet_chars(i_file, o_file):
             out_file.write(f"{char} -> pos{pos}\n")
 
 
-i_file = "../input.txt"
-o_file = "../output.txt"
+i_file = os.path.dirname(__file__)+"/input.txt"
+o_file = os.path.dirname(__file__)+"/output.txt"
 find_alphabet_chars(i_file, o_file)
